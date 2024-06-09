@@ -5005,5 +5005,51 @@
         "explorerBlockLink": "https://explorer.sedracoin.com/blocks/$hash$",
         "explorerTxLink": "https://explorer.sedracoin.com/txs/{0}",
         "explorerAccountLink": "https://explorer.sedracoin.com/addresses/{0}"
+    },
+    "bitrae": {
+        "name": "Bitrae",
+        "canonicalName": "Bitrae",
+        "symbol": "BTRE",
+        "family": "bitcoin",
+        "website": "",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [
+                1024,
+                1
+            ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "posBlockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "scrypt",
+                    "args": [
+                        1024,
+                        1
+                    ]
+                }
+            ]
+        },
+        "hasMWEB": true,
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://explorer.bitrae.net/block/$hash$",
+        "explorerTxLink": "https://explorer.bitrae.net/tx/{0}",
+        "explorerAccountLink": "https://explorer.bitrae.net/address/{0}"
     }
 }
